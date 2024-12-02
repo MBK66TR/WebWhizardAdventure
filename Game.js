@@ -4,25 +4,62 @@ let playerStats = {
     gold: 0
 };
 
+//Variables 
+let progress = 0;
+
 const gameStory = {
     start: {
-        text: "Köyün kenarındaki küçük kulübende uyanıyorsun. Bugün büyücülük yolculuğunun ilk günü. Ne yapmak istersin?",
+        text: "Bir köyün kenarındaki küçük kulübende uyanıyorsun. Kendini ve hafızanı kaybetmişsin kim olduğunu bile bilmiyorsun. Karşında Yaşlı bir adam oturuyor. Adama Sor?",
         image: 'img/GuestHouse.jpg',
         choices: [
             {
-                text: "İksir yapımını öğrenmek için köy meydanına git",
-                nextScene: "village_square"
+                text: "Kimsin Sen?",
+                nextScene: "FirstWhizard_1",
+                progress: progress + 1
             },
+            
             {
-                text: "Büyülü ormanı keşfet",
-                nextScene: "magic_forest"
+                text: "Ben Kimim?",
+                nextScene: "FirstWhizard_1",
+                progress: progress + 1
             },
+        ]
+    },
+
+
+
+    FirstWhizard_1: {
+        text: "Yaşlı adam sana kendini tanıtıyor. Adının Köy Büyücüsü olduğunu söylüyor.",
+        image: 'img/GuestHouse.jpg',
+        choices: [
             {
-                text: "Kristal mağarasını ziyaret et",
-                nextScene: "crystal_cave"
+                text: "Devam et",
+                nextScene: "start"
             }
         ]
     },
+    FirstWhizard_2: {
+        text: "Seni tanımıyorum kapımın önünde yardıma muhtaç bir haldeydin şimdi durumunun bu kadar iyi olduğunu görmek güzel.",
+        image: 'img/GuestHouse.jpg',
+        choices: [
+            {
+                text: "Devam et",
+                nextScene: "start"
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
     village_square: {
         text: "Köy meydanında yaşlı bir büyücü ile karşılaşıyorsun. Sana basit bir şifa iksiri yapmayı öğretebileceğini söylüyor.",
         image: 'img/village_square.jpg',
