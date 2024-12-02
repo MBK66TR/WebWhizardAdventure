@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Köy Büyücüsü</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Köy Büyücüsü</h1>
+            <nav>
+                <ul>
+                    <li><a href="#anasayfa">Ana Sayfa</a></li>
+                    <li><a href="iksirler.html">İksirler</a></li>
+                    <li><a href="buyuler.html">Büyüler</a></li>
+                    <li><a href="malzemeler.html">Malzemeler</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Büyü Dünyasına Hoş Geldiniz</h2>
+                    <p>İksirler hazırlayın, büyüler öğrenin ve köyünüzün en güçlü büyücüsü olun!</p>
+                    <button class="cta-button" onclick="startGame()">Maceraya Başla</button>
+                </div>
+            </section>
+
+            <section id="game-section" class="game-section hidden">
+                <div class="game-container">
+                    <div class="game-stats">
+                        <div class="stat">Can: <span id="health">100</span></div>
+                        <div class="stat">Mana: <span id="mana">100</span></div>
+                        <div class="stat">Altın: <span id="gold">0</span></div>
+                    </div>
+                    <div class="game-content">
+                        <div id="game-text" class="game-text"></div>
+                        <div id="game-choices" class="game-choices"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

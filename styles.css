@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1a1a2e;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 2px solid #4a4a6a;
+}
+
+header h1 {
+    color: #9b5de5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #9b5de5;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('wizard-bg.jpg') center/cover;
+    padding: 50px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #9b5de5;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    background: #9b5de5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #7b3db5;
+}
+
+/* İksirler Sayfası Stilleri */
+.potions-grid {
+    padding: 40px 0;
+}
+
+.potion-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.potion-card {
+    background: rgba(155, 93, 229, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #9b5de5;
+}
+
+.potion-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Büyüler Sayfası Stilleri */
+.spells-section {
+    padding: 40px 0;
+}
+
+.spells-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.spell-card {
+    background: rgba(155, 93, 229, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #9b5de5;
+}
+
+/* Malzemeler Sayfası Stilleri */
+.ingredients-section {
+    padding: 40px 0;
+}
+
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.ingredient-card {
+    background: rgba(155, 93, 229, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #9b5de5;
+}
+
+.ingredient-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Genel Başlık Stilleri */
+section h2 {
+    color: #9b5de5;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Oyun Bölümü Stilleri */
+.game-section {
+    padding: 20px;
+    background: rgba(155, 93, 229, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.game-section.hidden {
+    display: none;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.game-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    font-size: 1.2em;
+    color: #9b5de5;
+}
+
+.game-text {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    min-height: 150px;
+    line-height: 1.6;
+}
+
+.game-choices {
+    display: grid;
+    gap: 10px;
+}
+
+.choice-button {
+    padding: 10px 20px;
+    background: rgba(155, 93, 229, 0.3);
+    border: 1px solid #9b5de5;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.choice-button:hover {
+    background: rgba(155, 93, 229, 0.5);
+}
