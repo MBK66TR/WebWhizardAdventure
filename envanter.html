@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envanter - Köy Büyücüsü</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="components/loadHeader.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container"></div>
+
+        <main>
+            <section class="inventory-section">
+                <h2>Envanter</h2>
+                <div class="inventory-stats">
+                    <div class="stat">Altın: <span id="inventory-gold">0</span></div>
+                    <div class="stat">Envanter Kapasitesi: <span id="inventory-capacity">0/10</span></div>
+                </div>
+                
+                <div class="inventory-grid">
+                    <div class="inventory-categories">
+                        <button class="category-button active" data-category="all">Tümü</button>
+                        <button class="category-button" data-category="potions">İksirler</button>
+                        <button class="category-button" data-category="materials">Malzemeler</button>
+                        <button class="category-button" data-category="equipment">Ekipmanlar</button>
+                    </div>
+                    
+                    <div id="inventory-items" class="inventory-items">
+                        <!-- Envanter öğeleri JavaScript ile buraya eklenecek -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="envanter.js"></script>
+</body>
+</html> 
